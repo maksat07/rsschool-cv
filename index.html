@@ -107,10 +107,37 @@
           <div class="my-educations-section">
             <h4><span class="my-work-experience-company">Jyldyz Academy</span></h4>
             <h5> Front  End Developer</h5>
-            <p class="my-work-experience-period">2021 - until now <span class="my-work-experience-divider">|</span> Online
+            <p class="my-work-experience-period">2021 - 2022 until now <span class="my-work-experience-divider">|</span> Online
             </p>
           </div>
         </div>
+        <section class="language">
+          <h3>Language</h3>
+          <ul class="my-work-experience-duty">
+            <li class="my-work-experience-duty"> Kyrgyz (native)</li>
+            <li class="my-work-experience-duty">Russian (fluent)</li>
+            <li class="my-work-experience-duty">Français (B1)</li>
+            <li class="my-work-experience-duty">English (A1)</li>
+        </ul>
+        </section>
+        <section class="code">
+          <h3>Code Example</h3>
+          <p class="about-me-description">Peak array index KATA from CODEWARS: Given an array of ints, return the index such that the sum of the elements to the right of that index equals the sum of the elements to the left of that index. If there is no such index, return -1. If there is more than one such index, return the left-most index.</p>
+          <pre>
+            <code>
+              function peak(arr) {
+                for (let i = 1; i < arr.length - 1; i++) {
+                  let leftSum = arr.slice(0, i).reduce((accumulator, currentValue) => accumulator + currentValue);
+                  let rightSum = arr.slice(i + 1).reduce((accumulator, currentValue) => accumulator + currentValue);
+                  if (leftSum === rightSum) {
+                    return i;
+                  }
+                }
+                return -1;
+              }
+            </code>
+        </pre>
+        </section>
       </div>
     </main>
     <footer>
