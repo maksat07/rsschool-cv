@@ -122,19 +122,12 @@
         </section>
         <section class="code">
           <h3>Code Example</h3>
-          <p class="about-me-description">Peak array index KATA from CODEWARS: Given an array of ints, return the index such that the sum of the elements to the right of that index equals the sum of the elements to the left of that index. If there is no such index, return -1. If there is more than one such index, return the left-most index.</p>
+          <p class="about-me-description">Solution for sign task at codewars:</p>
           <pre>
             <code>
-              function peak(arr) {
-                for (let i = 1; i < arr.length - 1; i++) {
-                  let leftSum = arr.slice(0, i).reduce((accumulator, currentValue) => accumulator + currentValue);
-                  let rightSum = arr.slice(i + 1).reduce((accumulator, currentValue) => accumulator + currentValue);
-                  if (leftSum === rightSum) {
-                    return i;
-                  }
+              function multiply (a, b) {
+                return a * b
                 }
-                return -1;
-              }
             </code>
         </pre>
         </section>
